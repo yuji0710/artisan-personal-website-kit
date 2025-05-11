@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -33,10 +32,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-6 bg-navy-light">
+    <section id="projects" className="py-24 px-6 bg-navy-dark">
       <div className="container mx-auto">
         <h2 className="section-heading">
-          <span className="text-highlight font-mono mr-2">02.</span>Things I've Built
+          <span className="text-highlight font-mono mr-2">03.</span>Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
