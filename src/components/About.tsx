@@ -3,8 +3,8 @@ import React from 'react';
 
 const About = () => {
   const skills = [
-    'JavaScript (ES6+)', 'TypeScript', 'React', 'Node.js', 
-    'Express', 'MongoDB', 'HTML & CSS', 'Tailwind CSS'
+    'Python', 'Machine Learning', 'SQL', 'React.js', 
+    'Java', 'C++', 'C', 'MERN Stack', 'Bash'
   ];
 
   return (
@@ -17,20 +17,19 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4 text-slate">
             <p>
-              Hello! My name is John and I enjoy creating things that live on the internet. 
-              My interest in web development started back in 2012 when I decided to try editing 
-              custom Tumblr themes — turns out hacking together a custom reblog button taught 
-              me a lot about HTML & CSS!
+              Hello! I'm Harsh, a passionate data scientist and developer currently completing my BSc in Information Technology, 
+              set to graduate in March 2025. My journey in tech began with programming languages like C and Java, but I quickly 
+              found my passion in the world of data science and machine learning.
             </p>
             
             <p>
-              Fast-forward to today, and I've had the privilege of working at an advertising agency, 
-              a start-up, a huge corporation, and a student-led design studio. My main focus these days 
-              is building accessible, inclusive products and digital experiences for a variety of clients.
+              I'm particularly interested in building intelligent systems that can extract meaningful insights from data 
+              and solve real-world problems. Throughout my academic journey, I've worked on various projects combining 
+              my knowledge of software development and data science to create innovative solutions.
             </p>
             
             <p>
-              Here are a few technologies I've been working with recently:
+              Here are a few technologies I work with:
             </p>
             
             <ul className="grid grid-cols-2 gap-2 mt-5">

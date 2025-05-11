@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate text-sm mb-4 md:mb-0">
-            Designed & Built by John Doe © {new Date().getFullYear()}
+            Designed & Built by Harsh Modi © {new Date().getFullYear()}
           </p>
           
           <div className="text-sm font-mono text-slate-light">

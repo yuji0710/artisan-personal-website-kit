@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     console.log('Form submitted:', formData);
     // Here you would typically integrate with a form submission service
-    alert('Thanks for your message! This is a demo, so no message was actually sent.');
+    alert('Thanks for your message! I will get back to you as soon as possible.');
     setFormData({ name: '', email: '', message: '' });
   };
 
@@ -35,8 +35,9 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-6">
             <p className="text-slate">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
-              I'll try my best to get back to you!
+              I'm currently looking for internship and job opportunities in data science and software development. 
+              Whether you have a question about my projects or want to discuss potential collaboration, 
+              I'll get back to you as soon as possible!
             </p>
             
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -90,7 +91,7 @@ const Contact = () => {
             
             <div className="flex space-x-6 pt-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/yuji0710" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate hover:text-highlight transition-colors duration-300"
@@ -99,7 +100,7 @@ const Contact = () => {
                 <Github size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://linkedin.com/in/harsh-modi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate hover:text-highlight transition-colors duration-300"
@@ -108,7 +109,7 @@ const Contact = () => {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:example@example.com" 
+                href="mailto:harshmodi@example.com" 
                 className="text-slate hover:text-highlight transition-colors duration-300"
                 aria-label="Email"
               >
@@ -122,19 +123,19 @@ const Contact = () => {
             <div className="space-y-4">
               <div>
                 <h4 className="font-mono text-highlight mb-1">Location</h4>
-                <p className="text-slate">San Francisco, CA</p>
+                <p className="text-slate">Mumbai, India</p>
               </div>
               <div>
                 <h4 className="font-mono text-highlight mb-1">Email</h4>
-                <p className="text-slate">john.doe@example.com</p>
+                <p className="text-slate">harshmodi@example.com</p>
               </div>
               <div>
-                <h4 className="font-mono text-highlight mb-1">Phone</h4>
-                <p className="text-slate">(123) 456-7890</p>
+                <h4 className="font-mono text-highlight mb-1">Education</h4>
+                <p className="text-slate">BSc IT (Graduating March 2025)</p>
               </div>
               <div>
                 <h4 className="font-mono text-highlight mb-1">Availability</h4>
-                <p className="text-slate">Open to freelance and full-time opportunities</p>
+                <p className="text-slate">Open to internships and job opportunities</p>
               </div>
             </div>
           </div>

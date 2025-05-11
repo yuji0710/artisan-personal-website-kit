@@ -22,7 +22,6 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'About', url: '#about' },
-    { name: 'Experience', url: '#experience' },
     { name: 'Projects', url: '#projects' },
     { name: 'Contact', url: '#contact' }
   ];
@@ -33,7 +32,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#hero" className="font-mono text-highlight text-lg font-semibold">
-          Portfolio
+          Harsh Modi
         </a>
         
         {/* Desktop Navigation */}

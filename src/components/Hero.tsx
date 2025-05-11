@@ -18,26 +18,27 @@ const Hero = () => {
         
         <div className={`transition-opacity duration-500 ${mounted ? 'opacity-100' : 'opacity-0'} delay-[600ms]`}>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-lightest mb-4">
-            John Doe.
+            Harsh Modi.
           </h1>
         </div>
         
         <div className={`transition-opacity duration-500 ${mounted ? 'opacity-100' : 'opacity-0'} delay-[900ms]`}>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-slate mb-6">
-            I build things for the web.
+            I build data-driven solutions.
           </h2>
         </div>
         
         <div className={`transition-opacity duration-500 ${mounted ? 'opacity-100' : 'opacity-0'} delay-[1200ms] max-w-xl`}>
           <p className="text-slate mb-12">
-            I'm a software developer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on building accessible, human-centered products.
+            I'm a data scientist and software developer with a BSc in IT, graduating in March 2025. 
+            I specialize in machine learning, data analysis, and full-stack development, creating intelligent solutions 
+            that solve real-world problems.
           </p>
         </div>
         
         <div className={`transition-opacity duration-500 ${mounted ? 'opacity-100' : 'opacity-0'} delay-[1500ms]`}>
           <a href="#projects" className="btn-primary">
-            Check out my work!
+            View My Projects
           </a>
         </div>
       </div>

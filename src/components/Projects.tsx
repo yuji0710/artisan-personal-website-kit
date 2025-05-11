@@ -7,28 +7,28 @@ import { Github, Link } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: 'Project One',
-      description: 'A web application that helps users track their daily habits and goals. Built with React, Node.js, and MongoDB.',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      github: '#',
+      title: 'AI-Powered Fashion Recommender',
+      description: 'A web application that uses computer vision to recommend similar fashion products based on user-uploaded images. Built with React, TensorFlow.js, and a product database.',
+      tags: ['React', 'TensorFlow.js', 'Computer Vision', 'Machine Learning'],
+      github: 'https://github.com/yuji0710',
       external: '#',
-      image: '/placeholder.svg'
+      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7'
     },
     {
-      title: 'Project Two',
-      description: 'An e-commerce platform built with React and a headless CMS. Features include product filtering, cart functionality, and payment integration.',
-      tags: ['React', 'Next.js', 'Stripe', 'Tailwind CSS'],
-      github: '#',
+      title: 'House Price Prediction Model',
+      description: 'A machine learning model that predicts house prices based on various features like location, size, and amenities. Implemented using Python, scikit-learn, and pandas for data analysis.',
+      tags: ['Python', 'scikit-learn', 'pandas', 'Data Analysis'],
+      github: 'https://github.com/yuji0710',
       external: '#',
-      image: '/placeholder.svg'
+      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085'
     },
     {
-      title: 'Project Three',
-      description: 'A real-time chat application with authentication, message persistence, and online status indicators.',
-      tags: ['React', 'Firebase', 'WebSockets', 'Styled-Components'],
-      github: '#',
+      title: 'MERN Stack Portfolio Website',
+      description: 'A responsive portfolio website built using the MERN stack (MongoDB, Express, React, Node.js) featuring dynamic content management and contact form functionality.',
+      tags: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
+      github: 'https://github.com/yuji0710',
       external: '#',
-      image: '/placeholder.svg'
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6'
     },
   ];
 
@@ -94,8 +94,8 @@ const Projects = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <a href="#" className="btn-primary">
-            View More Projects
+          <a href="https://github.com/yuji0710" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            View More Projects on GitHub
           </a>
         </div>
       </div>
