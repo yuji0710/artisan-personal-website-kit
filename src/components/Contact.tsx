@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ const Contact = () => {
     <section id="contact" className="py-24 px-6">
       <div className="container mx-auto">
         <h2 className="section-heading">
-          <span className="text-highlight font-mono mr-2">03.</span>Get In Touch
+          <span className="text-highlight font-mono mr-2">04.</span>Get In Touch
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -115,6 +115,15 @@ const Contact = () => {
               >
                 <Mail size={24} />
               </a>
+              <a 
+                href="https://instagram.com/harsh.modi" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate hover:text-highlight transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram size={24} />
+              </a>
             </div>
           </div>
           
@@ -128,6 +137,14 @@ const Contact = () => {
               <div>
                 <h4 className="font-mono text-highlight mb-1">Email</h4>
                 <p className="text-slate">harshmodi@example.com</p>
+              </div>
+              <div>
+                <h4 className="font-mono text-highlight mb-1">Social Media</h4>
+                <div className="flex flex-col space-y-1 text-slate">
+                  <p>LinkedIn: <a href="https://linkedin.com/in/harsh-modi" className="text-highlight hover:underline">Harsh Modi</a></p>
+                  <p>Instagram: <a href="https://instagram.com/harsh.modi" className="text-highlight hover:underline">@harsh.modi</a></p>
+                  <p>GitHub: <a href="https://github.com/yuji0710" className="text-highlight hover:underline">yuji0710</a></p>
+                </div>
               </div>
               <div>
                 <h4 className="font-mono text-highlight mb-1">Education</h4>
