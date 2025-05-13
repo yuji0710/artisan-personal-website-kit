@@ -46,6 +46,8 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
   }
 
   ::selection {
@@ -65,4 +67,154 @@
   .btn-primary {
     @apply px-6 py-3 border-2 border-highlight text-highlight rounded hover:bg-highlight/10 transition-colors duration-300 font-mono text-sm tracking-widest inline-block;
   }
+}
+
+/* Floating shapes decoration */
+.floating-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-shape {
+  position: absolute;
+  opacity: 0.4;
+  animation: float linear infinite;
+}
+
+.floating-shape.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.floating-shape.square {
+  width: 40px;
+  height: 40px;
+}
+
+.floating-shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #64ffda33;
+  background-color: transparent !important;
+}
+
+.floating-shape.hexagon {
+  width: 60px;
+  height: 34px;
+  background-color: transparent !important;
+  position: relative;
+}
+
+.floating-shape.hexagon:before,
+.floating-shape.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.floating-shape.hexagon:before {
+  bottom: 100%;
+  border-bottom: 17px solid #8892b030;
+}
+
+.floating-shape.hexagon:after {
+  top: 100%;
+  border-top: 17px solid #8892b030;
+}
+
+.floating-shape.plus {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background: transparent !important;
+}
+
+.floating-shape.plus:before,
+.floating-shape.plus:after {
+  content: "";
+  position: absolute;
+  background-color: #64ffda33;
+}
+
+.floating-shape.plus:before {
+  width: 100%;
+  height: 30%;
+  top: 35%;
+  left: 0;
+}
+
+.floating-shape.plus:after {
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Style for gradient line dividers */
+.gradient-line {
+  height: 3px;
+  background: linear-gradient(90deg, rgba(100, 255, 218, 0) 0%, rgba(100, 255, 218, 0.5) 50%, rgba(100, 255, 218, 0) 100%);
+  width: 100%;
+  margin: 40px 0;
+}
+
+/* Add decorative corner elements */
+.corner-decoration {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+}
+
+.corner-decoration.top-left {
+  top: 20px;
+  left: 20px;
+  border-top: 2px solid rgba(100, 255, 218, 0.3);
+  border-left: 2px solid rgba(100, 255, 218, 0.3);
+}
+
+.corner-decoration.top-right {
+  top: 20px;
+  right: 20px;
+  border-top: 2px solid rgba(100, 255, 218, 0.3);
+  border-right: 2px solid rgba(100, 255, 218, 0.3);
+}
+
+.corner-decoration.bottom-left {
+  bottom: 20px;
+  left: 20px;
+  border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+  border-left: 2px solid rgba(100, 255, 218, 0.3);
+}
+
+.corner-decoration.bottom-right {
+  bottom: 20px;
+  right: 20px;
+  border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+  border-right: 2px solid rgba(100, 255, 218, 0.3);
 }
