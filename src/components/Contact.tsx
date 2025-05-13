@@ -116,7 +116,7 @@ const Contact = () => {
                 <Mail size={24} />
               </a>
               <a 
-                href="https://instagram.com/harsh.modi" 
+                href="https://instagram.com/harsh_m710" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate hover:text-highlight transition-colors duration-300"
